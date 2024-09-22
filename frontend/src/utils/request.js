@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const request = axios.create({
-    baseURL: "http://localhost:5000",
+    baseURL: "https://to-do-task-26qr.onrender.com",
 })
 //https://blog-app-mern-fprg.onrender.com
 
