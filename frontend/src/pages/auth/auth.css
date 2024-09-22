@@ -1,0 +1,103 @@
+.auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 100vh;
+}
+.FormGroup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.FormLabel {
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 150px;
+}
+
+.FormInput {
+  padding: 10px;
+  font-size: 1.2rem;
+  border: 1px solid #464646;
+}
+
+.FormBtn {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #464646;
+  border: none;
+  color: #f1f1f1;
+}
+
+.FormFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.FormFooter a {
+  padding: 10px 0;
+  font-size: 18px;
+  border: none;
+  color: #f1f1f1;
+  background-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .FormGroup {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .FormLabel {
+    display: none;
+  }
+
+  .FormInput {
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+  }
+
+  .FormBtn {
+    width: 100%;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth {
+    padding: 10px;
+    height: 100vh;
+    margin-top: 20px;
+  }
+
+  .auth h1 {
+    display: none;
+  }
+
+  .FormGroup {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+
+  .FormInput {
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+  }
+
+  .FormBtn {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .FormFooter a {
+    font-size: 1rem;
+  }
+}

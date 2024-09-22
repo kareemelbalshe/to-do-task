@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.5s ease;
+}
+
+body {
+  background-color: #1f1f1f;
+  overflow-x: hidden;
+  color: #14c4c4;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+
+button{
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #1a1a1a;
+  color: thistle;
+  border: none;
+  font-size: 18px;
+}
+
+input{
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #464646;
+  border: none;
+  color: #f1f1f1;
+}
+
+a{
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #464646;
+  border: none;
+  color: #f1f1f1;
+}
+
+button:hover{
+  background-color: #343434;
+}
+
+/* Some Global Classes For icons */
+.bi-pencil-square {
+  color: green;
+  margin-right: 15px;
+}
+
+.bi-trash-fill {
+  color: red;
+}
+
+/* Scrollbar Classes For Google Chrome */
+html::-webkit-scrollbar {
+  width: 12px;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 15px;
+}
