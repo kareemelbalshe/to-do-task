@@ -19,7 +19,7 @@ function App() {
           <Route path="/" element={user?<Navigate to="/dashboard"/>:<Home />} />
           <Route path="/login" element={!user?<Login />:<Navigate to="/dashboard" />} />
           <Route path="/register" element={!user?<Register />:<Navigate to="/dashboard" />} />
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/dashboard" element={!user?<Navigate to="/" />:<Dashboard />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
         <Footer />
