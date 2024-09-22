@@ -50,17 +50,8 @@ export default function Dashboard() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        await dispatch(getList());
-      } catch (error) {
-        toast.success("start create list");
-      }
-    };
-  
-    fetchData();
-  }, [dispatch]);
-  
+    dispatch(getList());
+  }, []);
 
   const formSubmitHandler = async (e) => {
     e.preventDefault();
