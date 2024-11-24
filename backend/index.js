@@ -23,10 +23,8 @@ app.use(helmet())
 app.use(hpp())
 app.use(xss())
 
-// connect to database
 connectDB()
 
-// rate limit
 app.use(rateLimiting({
     windowMs: 10 * 60 * 1000,
     max: 500
